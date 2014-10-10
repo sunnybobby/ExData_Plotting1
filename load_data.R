@@ -5,7 +5,7 @@
 library(data.table)
 
 ## read the dataset
-data<-fread("H:/Download/R/household_power_consumption.txt", colClasses="character")
+data<-fread("household_power_consumption.txt", colClasses="character")
 
 ## subset the data 
 data<-data[Date %in% c("1/2/2007","2/2/2007")]
