@@ -11,8 +11,7 @@ data<-fread("household_power_consumption.txt", colClasses="character")
 data<-data[Date %in% c("1/2/2007","2/2/2007")]
 
 ## convert the Date and Time variables and classes of other varibles 
-data$DateTime             <-as.POSIXct(paste(data$Date,data$Time),
-                                       format="%d/%m/%Y %H:%M:%S")
+data$DateTime             <-as.POSIXct(paste(data$Date,data$Time),format="%d/%m/%Y %H:%M:%S")
 data$Global_active_power  <-as.numeric(data$Global_active_power)
 data$Global_reactive_power<-as.numeric(data$Global_reactive_power)
 data$Voltage              <-as.numeric(data$Voltage)
