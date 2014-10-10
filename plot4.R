@@ -6,7 +6,6 @@ png(filename="plot4.png",
     height=480,
     bg="transparent")
 
-
 ##construct the plots
 
 par(mfrow=c(2,2))
